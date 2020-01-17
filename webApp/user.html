@@ -1,0 +1,48 @@
+<html>
+    <head>
+
+        <title>Users</title>
+    </head>
+    <body>
+        <h2>Sub users</h2>
+        <form id="add-user">
+            <input type="text" name="userName" placeholder="user name"><br> 
+
+        <input type="text" name="userEmail" placeholder="user Email"><br> 
+        <input type="text" name="userPass" placeholder="passsword"><br>
+        <input type="date" name="userDOB" placeholder="birth date"><br>
+        <input type="submit" value="ADD USER" onclick="addUser();"><br>
+        
+        <input type="submit" value="CLEAR" onclick="clearData();"><br>
+    </form>
+    <form id="update-user" style="display:none;">
+        <input type="text" name="userName" placeholder="user name"><br> 
+
+    <input type="text" name="userEmail" placeholder="user Email"><br> 
+    <input type="text" name="userPass" placeholder="passsword"><br>
+
+    <input type="date" name="userDOB" placeholder="birth date"><br>
+    <input type="hidden" name="userId" value=""><br>
+
+    <input type="submit" value="UPDATE USER" onclick="updateUserData();"><br>
+    
+</form>
+    <div>
+        <table id="my-table" border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>passsword</th>
+                <th>DOB</th>
+                <th>Age</th>
+
+                <th colspan="2">Actions</th>
+
+            </tr>
+        </table>
+    </div>
+    <script src="webApp.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+    </head>
+    <body>
+        <form id="registration-form" action="login.html" onsubmit="return adminRegistration(this);">
+            <input type="text" name="uName" placeholder="User Name"><br>
+            
+            <input type="text" name="emailId" placeholder="User Email"><br>
+            <input type="text" name="uPass" placeholder="User Password"><br>
+            <input type="text" name="uConfirmPass" placeholder="Retype Password"><br>
+            <select id="uCity">
+                <option value="" disabled="" >Select City</option>
+                <option value="Palanpur">Palanpur</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Bharuch">Bharuch</option>
+            </select><br>
+            <select id="uState">
+                <option value="" disabled="">Select State</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Punjab">Punjab</option>
+                <option value="UP">UP</option>
+            </select><br>
+            <input type="checkbox" name="chkBox">Terms & Conditions<br>
+            <input type="submit" value="REGISTER NOW">
+
+        </form>
+        <script src="webApp.js"></script>
+
+    </body>
+</html>
